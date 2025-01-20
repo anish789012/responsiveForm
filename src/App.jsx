@@ -22,7 +22,7 @@ const App = () => {
         <button className="login-button">Log In</button>
       </form>
       <p className="signup-text">
-        Don't have an account? <a href="#">Signup now</a>
+        Don't have an account? <a href="#">SignUp Now</a>
       </p>
     </div>
   );
