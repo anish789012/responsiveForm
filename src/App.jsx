@@ -1,42 +1,19 @@
+import InputField from "./components/InputField";
+import SocialLogin from "./components/SocialLogin";
+
 const App = () => {
   return (
     <div className="login-container">
       <h2 className="form-title">Log in with</h2>
-      <div className="social-login">
-        <button className="social-button">
-          <img src="google.svg" alt="Google" className="social-icon" />
-          Google
-        </button>
-        <button className="social-button">
-          <img src="apple.svg" alt="Apple" className="social-icon" />
-          Apple
-        </button>
-      </div>
+      <SocialLogin />
 
       <p className="separator">
         <span>or</span>
       </p>
 
       <form action="#" className="login-form">
-        <div className="input-wrapper">
-          <input
-            type="email"
-            placeholder="Email address"
-            className="input-field"
-            required
-          />
-          <i className="material-symbols-rounded">mail</i>
-        </div>
-
-        <div className="input-wrapper">
-          <input
-            type="password"
-            placeholder="Password"
-            className="input-field"
-            required
-          />
-          <span class="material-symbols-rounded">lock</span>
-        </div>
+        <InputField type="email" placeholder="Email Address" icon="mail" />
+        <InputField type="password" placeholder="Password" icon="lock" />
 
         <a href="#" className="forgot-pass-link">
           Forgot Password?
